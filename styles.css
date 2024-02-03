@@ -38,7 +38,7 @@ body {
 .text h1 {
 mix-blend-mode: overlay;
     font-size: 70px;
-    text-shadow: 1px 1px white
+    text-shadow: 1px 1px white;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -46,8 +46,8 @@ mix-blend-mode: overlay;
     top: 50%;
     left: 50%;
     transform: translateX(-30%);
-	-webkit-text-stroke: 1px white;
-	text-shadow: 0px 1px 4px #23430C;
+    -webkit-text-stroke: 1px burlywood;
+    text-shadow: 8px 5px 7px #23430C;
 }
 
 input {
