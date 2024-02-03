@@ -20,7 +20,7 @@ body {
 .caixa-maior {
     background-color: #000000;
     /*  Troca cor de fundo  */
-    width: 95%;
+    width: 80%;
     /*  Largura  */
     max-width: 420px;
     /*  Largura  Maxima */
@@ -37,13 +37,17 @@ body {
 
 .text h1 {
     mix-blend-mode: overlay;
-    text-align: center;
-    position: absolute;
-    margin: -250px 50px;
-    margin: -300px -100px;
     font-size: 70px;
     text-shadow: 1px 1px white
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-30%);
 }
+
+
 
 input {
 
@@ -59,7 +63,7 @@ input {
     font-size: 20px;
     background-color: #7c7c7c2b;
     color: #ffffff;
-    width: calc(100% - 100px);
+    width: calc(100% - 45px);
 }
 
 button {
@@ -120,4 +124,39 @@ font-size: 20px;
     color: rgb(255, 255, 255);
 font-size: 20px;
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    /* Estilos para telas menores que 600 pixels de largura */
+    .caixa-maior {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    input {
+        width: calc(100% - 45px);
+    }
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Adicione isso para tornar as imagens dentro da caixa responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Adicione isso para tornar as imagens dentro da caixa responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text h1 {
+    font-size: 400%;
+    margin: -380px -100px;
 }
